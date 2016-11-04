@@ -1,4 +1,9 @@
-var playerScore = document.getElementsByTagName("playerScore");
+var playerScore;
+
+function curScore()
+{
+  playerScore = getCookie();
+}
 
 function MDAS()
 {
