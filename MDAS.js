@@ -2,7 +2,8 @@ var playerScore;
 
 function curScore()
 {
-  playerScore = getCookie();
+  playerScore = getCookie("myScore");
+  Number(playerScore);
 }
 
 function MDAS()

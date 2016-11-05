@@ -2,7 +2,8 @@ var playerScore;
 
 function curScore()
 {
-  playerScore = getCookie();
+  playerScore = getCookie("myScore");
+  Number(playerScore);
 }
 
 function wordsToNum()
@@ -14,7 +15,7 @@ function wordsToNum()
     {
       document.getElementById("message").innerHTML = "Enter numbers only!";
     }
-    else if(answer != "10,1,22,1,19,3,18,9,16,20" || answer != "1012211931891620" )
+    else if(answer != "31545" )
     {
       document.getElementById("message").innerHTML = "Sorry, that is incorrect!";
     }
